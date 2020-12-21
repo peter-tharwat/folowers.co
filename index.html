@@ -37,7 +37,7 @@ body{
         
         <div class="collapse navbar-collapse" id="ournavbar">
           <ul class="nav navbar-nav navbar-left">
-            <li class="active"><a href="#">الرئيسية</a></li>
+            <li class=""><a href="#">الرئيسية</a></li>
             <li><a href="#about">من نحن</a></li>
             <li><a href="#mechanism">آلية العمل</a></li>
             <li><a href="#services">خدمات</a></li>  
@@ -45,11 +45,66 @@ body{
         </div> 
       </div> 
   </nav>
+
+ 
+<!-- Modal -->
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog modal-lg" style="background: transparent;border:none;box-shadow: unset;">
+
+    <!-- Modal content-->
+    <div class="modal-content " style="background: transparent;border:none;box-shadow: unset;">
+      <div class="modal-header row " style="margin: 0px;background: transparent;border:none;box-shadow: unset;">
+
+      	<div class="col-xs-1 text-center" style="padding: 0px;border:none;box-shadow: unset;opacity: 1;">
+      		<button type="button" class="close px-2 close-nafezly-video text-left" data-dismiss="modal" aria-label="Close" style="padding: unset;margin: unset;opacity: 1;" >
+          <span aria-hidden="true" style="font-size: 31px;color:#fff;
+    height: 0px!important;
+    line-height: .1;
+    padding-top: 11px;
+    display: inline-block;">&times;</span>
+        </button>
+      	</div>
+        
+
+       
+      </div>
+      <div class="modal-body p-2 m-0">
+       <div class="col-12 px-0">
+            <div style="    padding-bottom: 56.25%;    position: relative;
+                display: block; overflow: hidden;"> 
+            <iframe id="nafezly-video-helper" class="nafezly-youtube-video"    style="position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            height: 100%;
+            width: 100%;
+            border: 0; " 
+            src="">
+            </iframe>
+            </div>
+        </div>
+
+      </div>
+      
+    </div>
+
+
+
+  </div>
+</div>
+
+
+
+
   <!--header section-->
-  <section class="header" id="home">
+  <section class="header" id="home" style="padding-top: 20px;">
     <div class="container">
       <div class="row">
-        <div class="col-sm-7">
+        <div class="col-sm-7 justify-content-center">
+        	<div class="col-12 px-0" style="display: flex;justify-content: center;">
+        		<img src="bg/logo.png" style="width: 60%;margin: auto;display: inline-block;">
+        	</div>
+        	
           <h1 style="line-height: 1.4">أداة التسويق عبر وسائل التواصل الاجتماعي الكل في واحد التي ستحتاجها !</h1>
           <h4 style="line-height: 1.8;font-size: 17px">
 * التسويق عبر وسائل الإعلام 
@@ -59,11 +114,11 @@ body{
           <button class="all-btn">
             <a href="#about"  class="mail-style">المزيد</a>
           </button>
-          <button id="play_button" class="all-btn">
+          <button id="play_button" class="all-btn play-nafezly-video" data-toggle="modal" data-target="#myModal">
             <a href="#contact"  class="mail-style"><img src="bg/Icon ionic-md-play.png"></a>
           </button>
         </div>
-        <div class="col-sm-5">
+        <div class="col-sm-5" style="padding-top: 20vh;">
           <img id="social_bg" src="bg/Social Dashboard-amico (1).svg" class="img-responsive" alt="header_pic">
         </div>
       </div>
@@ -75,31 +130,7 @@ body{
 
 
 
-   <section class="login" id="login">
-    <div class="container">
-      <div class="row my-5"> 
-        <div class="col-12 text-center">
-          <p class="sub_title">تسجيل الدخول</p>
-        </div>
-        <div class="col-xs-12 px-0 my-5">
-          <form method="post" class="col-xs-12 px-0 row mx-0  " style="margin-top: 90px;margin-bottom: 90px;" >
-            <div class="col-xs-6 px-2">
-              <p>كلمة المرور</p>
-              <input type="" name="" class="form-control">
-              <div class="col-xs-12 " style="padding-top: 20px;">
-                <button class="btn btn-primary" style="padding-top: 10px;padding-bottom: 10px;">تسجيل الدخول</button>
-              </div>
-            </div>
-            <div class="col-xs-6 px-2">
-              <p>اسم المستخدم</p>
-              <input type="" name="" class="form-control">
-            </div>
-            
-          </form>
-        </div>
-      </div>
-    </div>
-  </section>
+
 
 
 
@@ -252,6 +283,25 @@ body{
     </div>
   </section> -->
 
+
+
+     <section class="login" id="login">
+    <div class="container">
+      <div class="row my-5"> 
+        <div class="col-12 text-center">
+          <p class="sub_title">هل أنت جاهز ؟</p>
+        </div>
+        <div class="col-xs-12 px-0 my-5 text-center" style="justify-content: center; display: flex;margin-bottom: 90px;padding-top: 40px;">
+        	<a href="https://live.folowers.co">
+           		<button class="btn btn-primary" style="padding-top: 10px;padding-bottom: 10px;display: inline-block;margin: auto;font-size: 26px">ابدأ الآن</button>
+           </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
   <!--footer------------------------------->
   <section class="footer">
     <div class="container">
@@ -290,6 +340,19 @@ body{
   </section>
   <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <script>
+    var src = 'https://www.youtube.com/embed/ouPdZCSjrN4?controls=0&rel=0&showinfo=0&color=white';
+    $('.close-nafezly-video,#myModal').on('click',function(){
+        $('.nafezly-youtube-video').attr('src','');  
+        $('#myModal').fadeOut(200);
+    });
+    $('.play-nafezly-video').on('click',function(){
+        if($('.nafezly-youtube-video').attr('src')=='')
+        $('.nafezly-youtube-video').attr('src',src);  
+    });
+    
+</script>
+
 </body>
 
 </html>
